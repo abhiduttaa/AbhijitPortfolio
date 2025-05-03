@@ -82,6 +82,27 @@
     
     /* Home Section */
     #home {
+    padding-top: 70px; /* Add padding to account for fixed navbar */
+  }
+
+  @media (max-width: 768px) {
+    #home {
+      padding-top: 80px; /* Slightly more padding on mobile */
+      text-align: center;
+    }
+    
+    #home .row {
+      flex-direction: column-reverse; /* Stack image below text on mobile */
+    }
+    
+    #home .col-lg-6 {
+      padding-top: 20px; /* Add spacing between sections */
+    }
+  }
+
+
+
+    #home {
       background-color: #111;
       color: white;
       position: relative;
@@ -241,14 +262,14 @@
     .form-control {
       background-color: #f3ebeb;
       border: none;
-      color: white;
+      color: rgb(0, 0, 0);
       padding: 12px 15px;
       margin-bottom: 15px;
     }
     
     .form-control:focus {
       background-color: #ffffff;
-      color: white;
+      color: rgb(0, 0, 0);
       box-shadow: none;
     }
     
@@ -375,8 +396,8 @@
     <div class="container">
       <div class="row align-items-center">
         <!-- Text Content -->
-        <div class="col-lg-6 col-md-12 text-center text-md-start mb-5 mb-lg-0" data-aos="fade-right">
-          <h1 class="display-4 fw-bold mb-4">
+        <div class="col-lg-6 col-md-12 text-center text-md-start mb-5 mb-lg-0" data-aos="fade-right" style="padding: 50px;">
+          <h1 class="display-4 fw-bold mb-4" >
             <span class="abhijit">Hello, I'm <br></span>
             <span id="element" class="typed-text">Abhijit</span>
           </h1>
@@ -400,6 +421,7 @@
           </div>
         </div>
   
+        <!-- ?? -->
         <!-- Image -->
         <div class="col-md-6 d-flex justify-content-center justify-content-md-end mt-4 mt-md-0">
             <img src="MYPIC_PROFILE.jpg" alt="Abhijit" class="img-fluid rounded shadow"
